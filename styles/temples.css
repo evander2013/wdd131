@@ -18,7 +18,6 @@ body {
 }
 
 /* HEADER */
-
 header {
     background-color: var(--primary-color);
     color: white;
@@ -55,7 +54,6 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 1rem;
-    transition: background 0.3s ease;
 }
 
 nav a:hover {
@@ -63,14 +61,13 @@ nav a:hover {
 }
 
 /* MAIN */
-
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
 }
 
-main h2 {
+h2 {
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -94,7 +91,6 @@ figure img {
     object-fit: cover;
     border-radius: 10px;
 }
-}
 
 figcaption {
     margin-top: 0.5rem;
@@ -102,7 +98,6 @@ figcaption {
 }
 
 /* FOOTER */
-
 footer {
     background-color: var(--primary-color);
     color: white;
