@@ -1,20 +1,16 @@
 @media (min-width: 768px) {
 
-    #menu-button {
+    #menu {
         display: none;
     }
 
-    nav {
-        display: flex;
+    .navigation {
         flex-direction: row;
         justify-content: center;
-        gap: 1rem;
     }
 
-    .header-container {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    .navigation a {
+        display: block;
     }
 
     .gallery {

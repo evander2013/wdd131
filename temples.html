@@ -1,48 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="A responsive temple album page showcasing beautiful temples from around the world.">
+    <meta name="description" content="A responsive temple album page showcasing temples from around the world.">
     <meta name="author" content="Sebastian Evander">
 
     <title>Temple Album</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
 
     <script src="scripts/temples.js" defer></script>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-    <div class="header-container">
-        <h1>Temple Album</h1>
+    <h1>Temple Album</h1>
 
-        <button id="menu-button">☰</button>
+    <button id="menu" aria-label="Menu"></button>
 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Old</a>
-            <a href="#">New</a>
-            <a href="#">Large</a>
-            <a href="#">Small</a>
-        </nav>
-    </div>
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">Old</a>
+        <a href="#">New</a>
+        <a href="#">Large</a>
+        <a href="#">Small</a>
+    </nav>
 </header>
 
 <main>
-    <h2>Temple Gallery</h2>
-
-    <div class="gallery">
+    <section class="gallery">
 
         <figure>
             <img src="images/salt.jpg" alt="Salt Lake Temple">
@@ -89,14 +82,11 @@
             <figcaption>South Africa Temple</figcaption>
         </figure>
 
-    </div>
+    </section>
 </main>
 
 <footer>
-    <p>
-        © <span id="currentyear"></span> | Sebastian Evander | Uganda
-    </p>
-
+    <p>© <span id="currentyear"></span> Sebastian Evander | Uganda</p>
     <p id="lastModified"></p>
 </footer>
 
