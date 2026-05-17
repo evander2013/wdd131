@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #ffcd00;
-    --secondary-color: #000000;
-    --accent-color: #d90000;
-    --background-color: #f4f4f4;
-    --card-background: #ffffff;
-    --text-color: #222222;
+    --primary: #ffcd00;
+    --dark: #000;
+    --accent: #d90000;
+    --bg: #f4f4f4;
+    --card: #fff;
+    --text: #222;
 }
 
 * {
@@ -15,33 +15,22 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background: var(--bg);
+    color: var(--text);
     line-height: 1.6;
 }
 
-/* HEADER */
-
 header {
-    background-color: var(--secondary-color);
+    background: var(--dark);
     color: white;
     text-align: center;
     padding: 1.5rem;
 }
 
-header h1 {
-    font-size: 2rem;
-}
-
-/* HERO */
-
 .hero img {
     width: 100%;
-    height: auto;
     display: block;
 }
-
-/* CONTENT */
 
 .content {
     display: grid;
@@ -51,23 +40,17 @@ header h1 {
 }
 
 .card {
-    background-color: var(--card-background);
+    background: var(--card);
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .card h2 {
-    color: var(--accent-color);
-    margin-bottom: 1rem;
     text-align: center;
+    color: var(--accent);
+    margin-bottom: 1rem;
 }
-
-.card p {
-    margin-bottom: 0.7rem;
-}
-
-/* WEATHER */
 
 .weather-icon {
     width: 60px;
@@ -75,15 +58,9 @@ header h1 {
     margin: 0 auto 1rem;
 }
 
-/* FOOTER */
-
 footer {
-    background-color: var(--secondary-color);
+    background: var(--dark);
     color: white;
     text-align: center;
     padding: 1rem;
-}
-
-footer p {
-    margin: 0.4rem 0;
 }

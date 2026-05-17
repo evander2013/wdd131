@@ -1,31 +1,20 @@
-// FOOTER DATES
-
 document.getElementById("currentyear").textContent =
 new Date().getFullYear();
 
 document.getElementById("lastModified").textContent =
 `Last Modified: ${document.lastModified}`;
 
-
-// STATIC WEATHER VALUES
-
 const temperature = 8;
 const windSpeed = 10;
 
-
-// WIND CHILL FUNCTION
-
-function calculateWindChill(temp, speed) {
+function calculateWindChill(t, s) {
     return (
         13.12 +
-        0.6215 * temp -
-        11.37 * Math.pow(speed, 0.16) +
-        0.3965 * temp * Math.pow(speed, 0.16)
+        0.6215 * t -
+        11.37 * Math.pow(s, 0.16) +
+        0.3965 * t * Math.pow(s, 0.16)
     ).toFixed(1);
 }
-
-
-// DISPLAY WIND CHILL
 
 let windChill = "N/A";
 

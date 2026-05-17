@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta name="description" content="Country page about Uganda featuring weather, facts, and beautiful scenery." >
-    <meta name="author" content="Sebastian Evander" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Country page about Uganda featuring weather, facts, and scenery.">
+    <meta name="author" content="Sebastian Evander">
 
     <title>Uganda Country Page</title>
 
@@ -16,65 +17,50 @@
 
 <body>
 
-    <header>
-        <h1>Welcome to Uganda</h1>
-    </header>
+<header>
+    <h1>Welcome to Uganda</h1>
+</header>
 
-    <main>
+<main>
 
-        <!-- HERO SECTION -->
-        <section class="hero">
+    <section class="hero">
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/hero-large.webp">
+            <img src="images/hero-small.webp" alt="Beautiful landscape in Uganda">
+        </picture>
+    </section>
 
-            <picture>
-                <source media="(min-width: 768px)" srcset="images/hero-large.webp">
-                <img src="images/hero-small.webp" alt="Beautiful landscape in Uganda" width="1200" height="600">
-            </picture>
+    <section class="content">
 
-        </section>i
+        <article class="card">
+            <h2>Data</h2>
+            <p><strong>Country:</strong> Uganda</p>
+            <p><strong>Capital:</strong> Kampala</p>
+            <p><strong>Population:</strong> 48 Million</p>
+            <p><strong>Languages:</strong> English, Luganda</p>
+            <p><strong>Currency:</strong> Ugandan Shilling</p>
+            <p><strong>Area:</strong> 241,038 km²</p>
+            <p><strong>Famous For:</strong> Mountain Gorillas</p>
+        </article>
 
-        <!-- CONTENT SECTION -->
-        <section class="content">
+        <article class="card weather">
+            <h2>Weather</h2>
 
-            <!-- DATA CARD -->
-            <article class="card">
-                <h2>Data</h2>
+            <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
 
-                <p><strong>Country:</strong> Uganda</p>
-                <p><strong>Capital:</strong> Kampala</p>
-                <p><strong>Population:</strong> 48 Million</p>
-                <p><strong>Languages:</strong> English, Luganda</p>
-                <p><strong>Currency:</strong> Ugandan Shilling</p>
-                <p><strong>Area:</strong> 241,038 km²</p>
-                <p><strong>Famous For:</strong> Mountain Gorillas</p>
-            </article>
+            <p><strong>Temperature:</strong> <span id="temperature">8</span> °C</p>
+            <p><strong>Wind Speed:</strong> <span id="windspeed">10</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+        </article>
 
-            <!-- WEATHER CARD -->
-            <article class="card weather">
-                <h2>Weather</h2>
+    </section>
 
-                <img src="images/weather.jfif" alt="Weather icon" class="weather-icon">
+</main>
 
-                <p><strong>Temperature:</strong> <span id="temperature">8</span> °C</p>
-
-                <p><strong>Wind Speed:</strong> <span id="windspeed">10</span> km/h</p>
-
-                <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
-
-            </article>
-
-        </section>
-
-    </main>
-
-    <footer>
-
-        <p>
-            &copy; <span id="currentyear"></span> 🌍 Sebastian Evander 🌍 Uganda
-        </p>
-
-        <p id="lastModified"></p>
-
-    </footer>
+<footer>
+    <p>&copy; <span id="currentyear"></span> 🌍 Sebastian Evander 🌍 Uganda</p>
+    <p id="lastModified"></p>
+</footer>
 
 </body>
 </html>
