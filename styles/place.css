@@ -1,66 +1,121 @@
 :root {
     --primary: #ffcd00;
-    --dark: #000;
+    --dark: #111;
     --accent: #d90000;
     --bg: #f4f4f4;
-    --card: #fff;
+    --card: #ffffff;
     --text: #222;
 }
 
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BASE */
 body {
     font-family: Arial, sans-serif;
-    background: var(--bg);
+    background: linear-gradient(to bottom, #f4f4f4, #e9e9e9);
     color: var(--text);
     line-height: 1.6;
 }
 
+/* HEADER */
 header {
-    background: var(--dark);
+    background: linear-gradient(90deg, #000, #333);
     color: white;
     text-align: center;
     padding: 1.5rem;
+    letter-spacing: 1px;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+/* HERO */
 .hero img {
     width: 100%;
+    height: auto;
     display: block;
 }
 
+/* CONTENT LAYOUT */
 .content {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    padding: 1.5rem;
+    padding: 1rem;
+    max-width: 1100px;
+    margin: auto;
 }
 
+/* CARDS */
 .card {
     background: var(--card);
     padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* CARD TITLE */
 .card h2 {
     text-align: center;
     color: var(--accent);
     margin-bottom: 1rem;
 }
 
+/* WEATHER ICON */
 .weather-icon {
     width: 60px;
     display: block;
     margin: 0 auto 1rem;
 }
 
+/* WEATHER TEXT */
+.weather p {
+    margin: 0.5rem 0;
+    font-size: 1.05rem;
+}
+
+/* FOOTER */
 footer {
-    background: var(--dark);
+    background: #111;
     color: white;
     text-align: center;
     padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+
+    .content {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
 }
