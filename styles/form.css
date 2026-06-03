@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+}
+
+/* Header */
+header {
+  background: #2b0033;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+}
+
+/* Form container */
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #d6d0d6;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Labels */
+label, p {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Inputs */
+select, input[type="date"], input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+/* Rating */
+.rating {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.rating label {
+  display: inline-block;
+  margin: 5px 10px;
+  font-size: 18px;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Submit */
+input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background: #eee;
+  border: 1px solid #999;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #2b0033;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
