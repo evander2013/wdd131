@@ -1,0 +1,92 @@
+/* Google Fonts:
+   Montserrat - Headings
+   Open Sans - Body Text
+*/
+
+:root {
+    --primary-color: #2E8B57; /* Forest Green */
+    --secondary-color: #F4B400; /* Golden Yellow */
+    --background-color: #FFFFFF;
+    --text-color: #333333;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.25rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    background-color: #f9f9f9;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-left: 5px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+pre {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    overflow-x: auto;
+    font-family: monospace;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+strong {
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 0.75rem;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    pre {
+        font-size: 0.8rem;
+    }
+}
