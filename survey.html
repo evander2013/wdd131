@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workplace & Team Survey</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* YELLOW HEADER */
+header {
+    background: #ffcc00;
+    padding: 25px;
+    text-align: center;
+    color: #000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.section {
+    margin-top: 25px;
+    padding: 15px;
+    border-left: 5px solid #ffcc00;
+    background: #fafafa;
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin: 6px 0;
+}
+
+input[type="text"], input[type="date"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background: #ffcc00;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #e6b800;
+}
+
+footer {
+    text-align: center;
+    margin: 20px;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>WORKPLACE & TEAM PERFORMANCE SURVEY</h1>
+    <p>Confidential Employee Feedback Form</p>
+</header>
+
+<div class="container">
+
+<form>
+
+<!-- Employee Info -->
+<div class="section">
+<h2>Employee Information</h2>
+
+<label>Employee Code</label>
+<input type="text" required>
+
+<label>Department / Team</label>
+<input type="text">
+
+<label>Date</label>
+<input type="date">
+</div>
+
+<!-- Communication -->
+<div class="section">
+<h2>Team Communication</h2>
+
+<p>1. Communication within the team is effective.</p>
+<label><input type="radio" name="q1"> Strongly Agree</label>
+<label><input type="radio" name="q1"> Agree</label>
+<label><input type="radio" name="q1"> Neutral</label>
+<label><input type="radio" name="q1"> Disagree</label>
+
+<p>2. My opinions are respected.</p>
+<label><input type="radio" name="q2"> Always</label>
+<label><input type="radio" name="q2"> Often</label>
+<label><input type="radio" name="q2"> Sometimes</label>
+<label><input type="radio" name="q2"> Never</label>
+
+</div>
+
+<!-- Teamwork -->
+<div class="section">
+<h2>Teamwork & Collaboration</h2>
+
+<p>3. Team members support each other.</p>
+<label><input type="radio" name="q3"> Strongly Agree</label>
+<label><input type="radio" name="q3"> Agree</label>
+<label><input type="radio" name="q3"> Neutral</label>
+<label><input type="radio" name="q3"> Disagree</label>
+
+<p>4. Work is distributed fairly.</p>
+<label><input type="radio" name="q4"> Strongly Agree</label>
+<label><input type="radio" name="q4"> Agree</label>
+<label><input type="radio" name="q4"> Neutral</label>
+<label><input type="radio" name="q4"> Disagree</label>
+
+</div>
+
+<!-- Leadership -->
+<div class="section">
+<h2>Team Leader</h2>
+
+<p>5. The team leader communicates clearly.</p>
+<label><input type="radio" name="q5"> Strongly Agree</label>
+<label><input type="radio" name="q5"> Agree</label>
+<label><input type="radio" name="q5"> Neutral</label>
+<label><input type="radio" name="q5"> Disagree</label>
+
+<p>6. The team leader is supportive.</p>
+<label><input type="radio" name="q6"> Strongly Agree</label>
+<label><input type="radio" name="q6"> Agree</label>
+<label><input type="radio" name="q6"> Neutral</label>
+<label><input type="radio" name="q6"> Disagree</label>
+
+</div>
+
+<!-- Feedback -->
+<div class="section">
+<h2>Feedback</h2>
+
+<label>What is going well?</label>
+<textarea rows="3"></textarea>
+
+<label>What needs improvement?</label>
+<textarea rows="3"></textarea>
+
+<label>Suggestions</label>
+<textarea rows="3"></textarea>
+
+</div>
+
+<button type="submit">Submit Survey</button>
+
+</form>
+
+</div>
+
+<footer>
+© 2026 Workplace Survey | Confidential
+</footer>
+
+</body>
+</html>
