@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Uganda Tourism & Culture for travel information, cultural experiences, and destination inquiries.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uganda Tourism | Contact</title>
+
+    <link rel="stylesheet" href="styles/project.css">
+    <script defer src="scripts/project.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Contact Uganda Tourism & Culture</h1>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="parks.html">National Parks</a></li>
+            <li><a href="culture.html">Culture & Food</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero-small">
+        <h2>Get in Touch</h2>
+
+        <p>
+            Have questions about Uganda's tourist attractions, culture,
+            travel destinations, or safari adventures? Send us a message.
+        </p>
+    </section>
+
+    <section class="form-section">
+
+        <form id="contactForm">
+
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="fullname">
+                    Full Name *
+                </label>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    required>
+
+                <label for="email">
+                    Email Address *
+                </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required>
+
+                <label for="country">
+                    Country
+                </label>
+                <input
+                    type="text"
+                    id="country"
+                    name="country">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Inquiry</legend>
+
+                <label for="interest">
+                    Area of Interest
+                </label>
+
+                <select id="interest" name="interest">
+                    <option value="">Select an Option</option>
+                    <option value="parks">National Parks</option>
+                    <option value="culture">Culture & Heritage</option>
+                    <option value="food">Traditional Foods</option>
+                    <option value="travel">Travel Tips</option>
+                </select>
+
+                <label for="message">
+                    Message *
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required></textarea>
+
+            </fieldset>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+        <div id="formMessage"></div>
+
+    </section>
+
+    <section>
+        <h2>Why Visit Uganda?</h2>
+
+        <div class="cards">
+
+            <article class="card">
+                <h3>Wildlife</h3>
+                <p>
+                    Experience gorilla trekking, safaris, and bird watching
+                    in some of Africa's most beautiful parks.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Culture</h3>
+                <p>
+                    Discover vibrant traditions, kingdoms, music, dance,
+                    and local communities.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Adventure</h3>
+                <p>
+                    Explore waterfalls, mountains, lakes, and exciting
+                    outdoor activities across Uganda.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Evander Kalwanyi | Uganda</p>
+
+    <p id="lastModified"></p>
+
+    <p>
+        <a href="references.html">References</a>
+    </p>
+</footer>
+
+</body>
+</html>
